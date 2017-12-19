@@ -36,7 +36,7 @@ An alternative to using `public/index.html` is to test your module inside of the
 4. Now in the masterclass repo, cd into the directory that has the `package.json` file you wish to test this module in. *Probably `vendor/assets` or just `/`*. Run `npm link @masterclass/mc-your-module-name`
 5. Import your module
     - es6: `import myModule from '@masterclass/mc-your-module-name'`
-    - coffeescript: `#= require @masterclass/mc-your-module-name/dist/main.js`
+    - coffeescript: `#= require @masterclass/mc-your-module-name/dist/bundle.js`
         - will be assigned to variable from `config.moduleName` setting
 6. Have `yarn start` running or run `yarn build`. Any changes made here should be linked to the main repo.
 
