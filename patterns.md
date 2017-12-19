@@ -20,8 +20,8 @@ const myModule = () => {
 ```
 ### Subscribe to the Observer
 ```js
-myModule.onThing.subscribe((data) => {
+let aModule = myModule()
+aModule.onThing.subscribe((data) => {
   console.log('thing fired!')
 })
-
 ```
