@@ -1,7 +1,6 @@
 # Making a module
 
 ## Project Setup
----
 #### Clone this repo
 ```
 git clone https://github.com/yankaindustries/web-module-starter.git your-module-name
@@ -28,7 +27,6 @@ yarn start
 5. `public/index.html` - If you need some HTML to test your module
 
 ## Testing your module in the masterclass repo
----
 An alternative to using `public/index.html` is to test your module inside of the main repo. We'll be using `npm link` so you don't need to push every time you want to update your code. **Make sure your node versions are matching between the two repos.**
 1. Set the `name` value in your `package.json` to `@masterclass/mc-your-module-name`
 2. Set `config.moduleName` in `package.json`. Your module will be assigned to this variable when imported in rails/sprockets (not needed for webpack/es6)
@@ -41,7 +39,6 @@ An alternative to using `public/index.html` is to test your module inside of the
 6. Have `yarn start` running or run `yarn build`. Any changes made here should be linked to the main repo.
 
 ## Publishing your module (Git)
----
 1. Create a new public repo
 2. Rename the current origin to upstream `git remote rename origin upstream`
 3. Add the remote from your newly created repo `git remote add origin *your link*`
@@ -53,7 +50,6 @@ An alternative to using `public/index.html` is to test your module inside of the
 7. Install your module with `yarn install`
 
 ## Updating your module
----
 1. Make sure all of your changes are committed
 2. Run `npm version patch` to bump your version number
 3. `git push origin master && git push origin master --tags`

@@ -2,6 +2,7 @@
 This is a generic starter project for creating a standalone web module with a javascript bundle and styles.
 
 Full Instructions: [Making a module](making-a-module.md)
+
 Patterns: [Module patterns](patterns.md)
 
 ### Installation
