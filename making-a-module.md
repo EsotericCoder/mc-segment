@@ -4,6 +4,9 @@
 #### Clone this repo
 ```
 git clone https://github.com/yankaindustries/web-module-starter.git your-module-name
+
+if the above fails:
+git clone git@github.com:yankaindustries/web-module-starter.git your-module-name
 ```
 #### Set your node version to match the masterclass repo node version
 This comes in handy later when using `npm link` to test your module
