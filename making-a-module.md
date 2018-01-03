@@ -29,6 +29,20 @@ yarn start
 4. `assets/styles/preview.scss` - Any styles you need to preview your module in `public/index.html`
 5. `public/index.html` - If you need some HTML to test your module
 
+## Inluding an external dependency (like jquery)
+Sometimes your module uses a shared dependency that is already included in the main app.
+1. Edit the `rollup.config.js` file and add the external property to the default export like so:
+```js
+export default {
+  ...
+  external: ['jquery']
+}
+```
+2. Install jquery **only needed for local testing**
+    - If you are testing with jest you will need to install jquery as a dev dependency, run `yarn add jquery -D`
+    - Alternately, if you are testing your module in the dev server you can add jquery as a script tag in `public/index.html` from https://code.jquery.com/
+3. Now you can use `import $ from 'jquery'`
+
 ## Testing your module in the masterclass repo
 An alternative to using `public/index.html` is to test your module inside of the main repo. We'll be using `npm link` so you don't need to push every time you want to update your code. **Make sure your node versions are matching between the two repos.**
 1. Set the `name` value in your `package.json` to `@masterclass/mc-your-module-name`
