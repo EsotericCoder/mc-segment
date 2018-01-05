@@ -2,6 +2,17 @@
 # yarn lockfile v1
 
 
+"@masterclass/mc-browser-settings@yankaindustries/mc-browser-settings#0.0.1":
+  version "0.0.1"
+  resolved "https://codeload.github.com/yankaindustries/mc-browser-settings/tar.gz/d7ed8ce3061baddb58d45265783d1facdc9b8375"
+
+"@masterclass/mc-utilities@yankaindustries/mc-utilities#0.0.2":
+  version "0.0.2"
+  resolved "https://codeload.github.com/yankaindustries/mc-utilities/tar.gz/0f733183a5e7c93d5b2787450b96db4007304763"
+  dependencies:
+    "@masterclass/mc-browser-settings" yankaindustries/mc-browser-settings#0.0.1
+    promise-polyfill "^6.1.0"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -4094,6 +4105,10 @@ process-nextick-args@~1.0.6:
 progress@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
+
+promise-polyfill@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.1.0.tgz#dfa96943ea9c121fca4de9b5868cb39d3472e057"
 
 prr@~0.0.0:
   version "0.0.0"

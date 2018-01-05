@@ -38,5 +38,9 @@ export default {
     file: `dist/bundle.js`,
     format: 'umd'
   },
-  sourcemap: !isProd
+  sourcemap: !isProd,
+  external: ['jquery'],
+  globals: {
+    jquery: '$'
+  }
 };
